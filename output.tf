@@ -1,9 +1,4 @@
-output "vpc_id" {
+output "private_subnet_id" {
   description = "The ID of the VPC"
-  value = aws_vpc.vpc_instances.id
-}
-
-output "subnet_id" {
-  description = "The ID of the subnet"
-  value = aws_subnet.public_subnet.id
+  value = aws_subnet.private_subnet.id
 }

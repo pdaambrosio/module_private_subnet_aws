@@ -1,4 +1,4 @@
-variable "aws_vpc_id" {
+variable "vpc_id" {
   type = string
   description = "The ID of the VPC that this subnet belongs to."
   default = "vpc-1234567890"
@@ -16,7 +16,7 @@ variable "private_subnet_name" {
   default = "instace_subnet"
 }
 
-variable "map_private_ip_on_launch" {
+variable "map_public_ip_on_launch" {
   type = bool
   description = "Indicates whether instances launched into the subnet should be assigned a public IP address."
   default = false
